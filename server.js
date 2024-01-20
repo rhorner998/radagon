@@ -37,7 +37,6 @@ app.post('/gptquestion', (req, res) => {
   console.log(`Question: ${question}`);
 
    const gptApiKey = process.env.API_KEY; // Use the correct environment variable name
-  //const gptApiKey = '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'; // Use the correct environment variable name
   console.log('Api key' , gptApiKey);
 
   const apiUrl = 'https://api.openai.com/v1/chat/completions';
