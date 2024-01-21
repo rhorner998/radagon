@@ -4,7 +4,10 @@ const axios = require('axios');
 require('dotenv').config(); // Load environment variables early in your code
 
 const app = express();
-const port = 3000;
+// For Heroku
+const port = process.env.PORT;
+// For local
+//const port = 3000;
 
 // Using Express's built-in middleware for URL-encoded data
 app.use(express.urlencoded({ extended: true }));
