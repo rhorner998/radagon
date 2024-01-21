@@ -79,6 +79,11 @@ app.post('/gptquestion', (req, res) => {
     });
 });
 
+// this is the root route handler
+app.get('/', (req, res) => {
+  res.send('Welcome to the CreateAssistant!');
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
